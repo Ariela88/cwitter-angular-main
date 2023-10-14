@@ -1,0 +1,11 @@
+<header>
+  <span>cwitter</span>
+  <div>
+    <button *ngIf="user" (click)="logout()">logout</button>
+    <div *ngIf="!user">
+      <button routerLink="/login">login</button>
+      <button>register</button>
+    </div>
+  </div>
+
+</header>
